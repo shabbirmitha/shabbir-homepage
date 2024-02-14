@@ -7,11 +7,14 @@ const Terminal = () => {
 
   const isLoggedIn = React.useMemo(() => Boolean(data && data.user), [data])
 
-  const myStyle = {
-    fontSize: '0.9rem',
-    color: '#808dad',
-    lineHeight: '30px'
-  }
+  const myStyle = React.useMemo(
+    () => ({
+      fontSize: '0.9rem',
+      color: '#808dad',
+      lineHeight: '30px'
+    }),
+    []
+  )
 
   const terminalCommands = React.useMemo(() => {
     return {
@@ -64,7 +67,7 @@ const Terminal = () => {
           )
       }
     }
-  }, [data?.user?.email, data?.user?.name, isLoggedIn])
+  }, [data?.user?.email, data?.user?.name, isLoggedIn, myStyle])
 
   return (
     <TerminalContextProvider>
