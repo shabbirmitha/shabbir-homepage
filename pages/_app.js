@@ -2,7 +2,7 @@ import Layout from '../components/layouts/main'
 import Fonts from '../components/fonts'
 import { AnimatePresence } from 'framer-motion'
 import Chakra from '../components/chakra'
-import Payhip from '../components/payhip'
+// import Payhip from '../components/payhip'
 import { Analytics } from '@vercel/analytics/react'
 import { SessionProvider } from 'next-auth/react'
 import './index.css'
@@ -16,7 +16,7 @@ function Website({ Component, pageProps, router }) {
     <SessionProvider session={pageProps.session}>
       <Chakra cookies={pageProps.cookies}>
         <Fonts />
-        <Payhip />
+        {/* <Payhip /> */}
         <Layout router={router}>
           <AnimatePresence
             mode="wait"
