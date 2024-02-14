@@ -19,6 +19,7 @@ import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 // import thumbYouTube from '../public/images/links/youtube.png'
 import thumbSharecamp from '../public/images/works/sharecamp_thumb.png'
+import myPic from '../public/images/shabbir.jpg'
 import Image from 'next/image'
 import Terminal from '../components/Terminal'
 
@@ -64,7 +65,7 @@ const Home = () => (
             overflow="hidden"
           >
             <Image
-              src="/images/shabbir.jpg"
+              src={myPic}
               alt="Profile image"
               width="100"
               height="100"
