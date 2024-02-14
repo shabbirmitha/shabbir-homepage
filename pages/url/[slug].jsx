@@ -1,29 +1,29 @@
-import { useEffect } from "react";
-import { useSession, signIn } from "next-auth/react";
-import { useRouter } from "next/router";
-import { Container, Button } from "reactstrap";
-import { MagnifyingGlass, ThreeDots } from "react-loader-spinner";
+import { useEffect } from 'react'
+import { useSession, signIn } from 'next-auth/react'
+import { useRouter } from 'next/router'
+import { Container, Button } from 'reactstrap'
+import { MagnifyingGlass, ThreeDots } from 'react-loader-spinner'
 
-import urls from "../../components/data/urls";
+import urls from '../../components/data/urls'
 
 const URLComponent = ({ url }) => {
-  const router = useRouter();
-  const session = useSession();
+  const router = useRouter()
+  const session = useSession()
 
   useEffect(() => {
-    if (!url.requireAuth || session.status === "authenticated")
-      router.replace(url.url);
-  }, [router, session.status, url]);
+    if (!url.requireAuth || session.status === 'authenticated')
+      router.replace(url.url)
+  }, [router, session.status, url])
 
-  if (session.status === "loading")
+  if (session.status === 'loading')
     return (
       <Container
         style={{
-          width: "100vw",
-          height: "50vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
+          width: '100vw',
+          height: '50vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
         }}
       >
         <div>
@@ -44,21 +44,21 @@ const URLComponent = ({ url }) => {
           </div>
         </div>
       </Container>
-    );
+    )
 
   return (
     <Container className="my-5">
       <Container
         style={{
-          width: "100vw",
-          height: "50vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          textAlign: "center",
+          width: '100vw',
+          height: '50vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          textAlign: 'center'
         }}
       >
-        {url.requireAuth && session.status === "unauthenticated" ? (
+        {url.requireAuth && session.status === 'unauthenticated' ? (
           <div>
             <h3>Log-in required</h3>
             <Button onClick={signIn} color="success">
@@ -84,25 +84,25 @@ const URLComponent = ({ url }) => {
         )}
       </Container>
     </Container>
-  );
-};
+  )
+}
 
 export const getStaticPaths = () => {
   return {
-    paths: urls.map((url) => ({ params: { slug: url.slug } })),
-    fallback: false,
-  };
-};
+    paths: urls.map(url => ({ params: { slug: url.slug } })),
+    fallback: false
+  }
+}
 
-export const getStaticProps = (context) => {
-  const slug = context.params.slug;
-  const url = slug;
+export const getStaticProps = context => {
+  const slug = context.params.slug
+  const url = urls.find(e => e.slug === slug)
 
   return {
     props: {
-      url,
-    },
-  };
-};
+      url
+    }
+  }
+}
 
-export default URLComponent;
+export default URLComponent
