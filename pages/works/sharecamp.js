@@ -15,7 +15,7 @@ const Work = () => (
   <Layout title="ShareCamp">
     <Container>
       <Title>
-        ShareCamp <Badge>2019-</Badge>
+        ShareCamp <Badge>2019-2021</Badge>
       </Title>
       <P>
         A Social Media Platform for Traveling Freakz to share Campgrounds.
@@ -29,11 +29,11 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Platform</Meta>
-          <span>Windows/macOS/Linux/iOS/Android</span>
+          <span>Web App</span>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>NodeJS, Express, MongoDB</span>
+          <span>NodeJS, Express, MongoDB, VanillaJS</span>
         </ListItem>
         {/* <ListItem>
           <Meta>Blogpost</Meta>
@@ -44,15 +44,15 @@ const Work = () => (
         </ListItem> */}
       </List>
 
-      
+
       <AspectRatio maxW="640px" ratio={1.7} my={4}>
         <WorkImage src="/images/works/sharecamp_01.png" alt="ShareCamp" />
       </AspectRatio>
-      
+
       <AspectRatio maxW="640px" ratio={1.7} my={4}>
         <WorkImage src="/images/works/sharecamp_02.png" alt="ShareCamp" />
       </AspectRatio>
-      
+
       <AspectRatio maxW="640px" ratio={1} my={4}>
         <WorkImage src="/images/works/sharecamp_03.png" alt="ShareCamp" />
       </AspectRatio>

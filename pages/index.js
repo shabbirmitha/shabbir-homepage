@@ -16,7 +16,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 // import thumbYouTube from '../public/images/links/youtube.png'
 import thumbSharecamp from '../public/images/works/sharecamp_thumb.png'
 import myPic from '../public/images/shabbir.JPG'
@@ -38,7 +38,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an web developer based in India!
+        Hello, I&apos;m an web developer from India!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -83,7 +83,7 @@ const Home = () => (
           I am a freelancer and a full-stack developer from India,
           while studying Bachelors in Computer Application (BCA) from BVP, Pune
           with a passion for creating digital stuff. Currently,
-          making web apps using vanillaJS and learning ReactJS.
+          making web apps using ReactJS.
           Developing {' '}
           <Link as={NextLink} href="/works/sharecamp" passHref scroll={false}>
             ShareCamp
@@ -129,22 +129,22 @@ const Home = () => (
         </BioSection>
       </Section>
 
-      <Section delay={0.3}>
-        {/* <Heading as="h3" variant="section-title"> */}
-        {/* I ♥ */}
-        {/* </Heading> */}
-        {/* <Paragraph> */}
-        {/* Art, Music,{' '} */}
-        {/* <Link href="https://illust.odoruinu.net/" target="_blank"> */}
-        {/* Drawing */}
-        {/* </Link> */}
-        {/* , Playing Drums,{' '} */}
-        {/* <Link href="" target="_blank"> */}
-        {/* Photography */}
-        {/* </Link> */}
-        {/* , Leica, Machine Learning */}
-        {/* </Paragraph> */}
-      </Section>
+      {/* <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+        I ♥
+        </Heading>
+        <Paragraph>
+        Art, Music,{' '}
+        <Link href="https://illust.odoruinu.net/" target="_blank">
+        Drawing
+        </Link>
+        , Playing Drums,{' '}
+        <Link href="" target="_blank">
+        Photography
+        </Link>
+        , Leica, Machine Learning
+        </Paragraph>
+      </Section> */}
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
@@ -158,18 +158,18 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @shabbirmitha
+                @shabbir
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://linkedin.com/in/shabbirmitha" target="_blank">
+            <Link href="https://linkedin.com/in/shabbir19" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
+                leftIcon={<IoLogoLinkedin />}
               >
-                @shabbirmitha
+                @shabbir19
               </Button>
             </Link>
           </ListItem>
@@ -180,26 +180,26 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<IoLogoInstagram />}
               >
-                @shabbir
+                @_shabbir19
               </Button>
             </Link>
           </ListItem>
         </List>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          {/* <GridItem */}
-          {/* href="https://www.youtube.com/devaslife" */}
-          {/* title="Dev as Life" */}
-          {/* thumbnail={thumbYouTube} */}
-          {/* > */}
-          {/* My YouTube channel (&gt;150k subs) */}
-          {/* </GridItem> */}
           <GridItem
             href="https://sharecamp.cyclic.app/"
             title="ShareCamp"
             thumbnail={thumbSharecamp}
           >
             A Social Media Platform
+          </GridItem>
+          <GridItem
+            href="https://sharecamp.cyclic.app/"
+            title="WorldWise"
+            thumbnail={thumbSharecamp}
+          >
+            A Digital Travelling Diary.
           </GridItem>
         </SimpleGrid>
 

@@ -12,7 +12,7 @@ const VoxelComputer = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlDogGLB = (process.env.NODE_ENV === 'production' ? '' : '') + '/computer.glb'
+  const urlComputerGLB = (process.env.NODE_ENV === 'production' ? '' : '') + '/computer.glb'
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
@@ -71,7 +71,7 @@ const VoxelComputer = () => {
       controls.autoRotate = true
       controls.target = target
 
-      loadGLTFModel(scene, urlDogGLB, {
+      loadGLTFModel(scene, urlComputerGLB, {
         receiveShadow: false,
         castShadow: false
       }).then((loadedModel) => {

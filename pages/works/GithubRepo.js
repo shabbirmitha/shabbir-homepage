@@ -29,6 +29,10 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Link</Meta>
+          <Link href="https://angular-app-swart-pi.vercel.app/" target='_blank'>
+            Website{' '}
+            <ExternalLinkIcon mx="2px" />
+          </Link><br />
           <Link href="https://github.com/shabbirmitha/angular-app" target='_blank'>
             Github Repository{' '}
             <ExternalLinkIcon mx="2px" />
@@ -78,7 +82,7 @@ const Work = () => (
           <ExternalLinkIcon mx="2px" />
         </ListItem>
       </UnorderedList> */}
-      
+
       <AspectRatio maxW="640px" ratio={1.7} my={4}>
         <WorkImage src="/images/works/githubrepo_01.png" alt="githubrepo" />
       </AspectRatio>

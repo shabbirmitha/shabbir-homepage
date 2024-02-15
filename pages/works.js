@@ -4,7 +4,7 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbShareCamp from '../public/images/works/sharecamp_thumb.png'
-import thumbGitHubRepo from '../public/images/works/sharecamp_thumb2.jpg'
+import thumbGitHubRepo from '../public/images/works/githubrepo_02.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -16,7 +16,7 @@ const Works = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem id="sharecamp" title="ShareCamp" thumbnail={thumbShareCamp}>
-            A Social Media Platform for Traveling Freakz to share Campgrounds. 
+            A Social Media Platform for Traveling Freakz to share Campgrounds.
           </WorkGridItem>
         </Section>
         <Section>
@@ -31,15 +31,15 @@ const Works = () => (
 
         {/* <Section delay={0.1}>
           <WorkGridItem
-            id="fourpainters"
-            title="The four painters"
-            thumbnail={thumbFourPainters}
+            id="WorldWise"
+            title="WorldWise"
+            thumbnail={thumbShareCamp}
           >
             A video work generated with deep learning, imitating famous four
             painters like Van Gogh
           </WorkGridItem>
-        </Section>
-        <Section delay={0.1}>
+        </Section> */}
+        {/* <Section delay={0.1}>
           <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
             An app that suggests ramen(noodle) shops based on a given photo of
             the ramen you want to eat

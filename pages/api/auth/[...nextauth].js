@@ -12,6 +12,7 @@ export const authOptions = {
     GitHubProvider({
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
       clientId: process.env.GITHUB_CLIENT_ID,
+      callbackUrl: process.env.GITHUB_CALLBACK_URL,
     }),
     DiscordProvider({
       clientId: process.env.DISCORD_CLIENT_ID,

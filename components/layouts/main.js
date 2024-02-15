@@ -36,7 +36,7 @@ const Main = ({ children, router }) => {
       <Container maxW="container.md" pt={14}>
         <LazyVoxelComputer />
         {/* <Box
-          className="voxel-dog"
+          className="voxel-computer"
           m="auto"
           mt={['-20px', '-60px', '-120px']}
           mb={['-40px', '-140px', '-200px']}
