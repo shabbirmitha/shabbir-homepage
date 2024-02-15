@@ -194,13 +194,13 @@ const Home = () => (
           >
             A Social Media Platform
           </GridItem>
-          <GridItem
+          {/* <GridItem
             href="https://sharecamp.cyclic.app/"
             title="WorldWise"
             thumbnail={thumbSharecamp}
           >
             A Digital Travelling Diary.
-          </GridItem>
+          </GridItem> */}
         </SimpleGrid>
 
 
