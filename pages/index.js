@@ -19,6 +19,7 @@ import { GridItem } from '../components/grid-item'
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 // import thumbYouTube from '../public/images/links/youtube.png'
 import thumbSharecamp from '../public/images/works/sharecamp_thumb.png'
+import thumbDocScores from '../public/images/works/docscores_01.png'
 import myPic from '../public/images/shabbir.JPG'
 import Image from 'next/image'
 import Terminal from '../components/Terminal'
@@ -192,13 +193,13 @@ const Home = () => (
           >
             A Social Media Platform
           </GridItem>
-          {/* <GridItem
-            href="https://sharecamp.cyclic.app/"
-            title="WorldWise"
-            thumbnail={thumbSharecamp}
+          <GridItem
+            href="https://doc-scores.vercel.app/"
+            title="DocScores"
+            thumbnail={thumbDocScores}
           >
-            A Digital Travelling Diary.
-          </GridItem> */}
+            Score Ball by Ball for Cricket Matches.
+          </GridItem>
         </SimpleGrid>
 
 

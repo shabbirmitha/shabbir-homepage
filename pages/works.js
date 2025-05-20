@@ -4,6 +4,7 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbShareCamp from '../public/images/works/sharecamp_thumb.png'
+import thumbDocScores from '../public/images/works/docscores_01.png'
 import thumbGitHubRepo from '../public/images/works/githubrepo_02.png'
 
 const Works = () => (
@@ -29,16 +30,15 @@ const Works = () => (
           </WorkGridItem>
         </Section>
 
-        {/* <Section delay={0.1}>
+        <Section delay={0.1}>
           <WorkGridItem
-            id="WorldWise"
-            title="WorldWise"
-            thumbnail={thumbShareCamp}
+            id="docScores"
+            title="DocScores"
+            thumbnail={thumbDocScores}
           >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
+            Score Ball by Ball for Cricket Matches.
           </WorkGridItem>
-        </Section> */}
+        </Section>
         {/* <Section delay={0.1}>
           <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
             An app that suggests ramen(noodle) shops based on a given photo of
