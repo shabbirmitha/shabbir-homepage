@@ -46,7 +46,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Shabbir
           </Heading>
-          <p>Full Stack Web Developer ( MERN Stack )</p>
+          <p>( MERN / DevOps )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -80,15 +80,9 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          I am a freelancer and a full-stack developer from India,
-          while studying Bachelors in Computer Application (BCA) from BVP, Pune
-          with a passion for creating digital stuff. Currently,
-          making web apps using ReactJS.
-          Developing {' '}
-          <Link as={NextLink} href="/works/sharecamp" passHref scroll={false}>
-            ShareCamp
-          </Link>
-          , A social media platform for travelers.
+          a developer focused on building with MERN stack, now
+          exploring DevOps to streamline how things run and ship,
+          with a passion for creating digital stuff.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -126,6 +120,10 @@ const Home = () => (
           <BioYear>2024</BioYear>
           Completed the Bachelor&apos;s Program in Computer Application
           from Institution of Management and Entreprenourship Development.
+        </BioSection>
+        <BioSection>
+          <BioYear>2024-Present</BioYear>
+        Working as SDE-1 at <Link href="https://getmaxiq.com/" target="_blank">MaxIQ</Link>.
         </BioSection>
       </Section>
 
