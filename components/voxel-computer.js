@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useEffect, useRef, useCallback } from 'react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
@@ -12,7 +14,8 @@ const VoxelComputer = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const refRenderer = useRef()
-  const urlComputerGLB = (process.env.NODE_ENV === 'production' ? '' : '') + '/computer.glb'
+  const urlComputerGLB =
+    (process.env.NODE_ENV === 'production' ? '' : '') + '/computer.glb'
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer
@@ -74,9 +77,9 @@ const VoxelComputer = () => {
       loadGLTFModel(scene, urlComputerGLB, {
         receiveShadow: false,
         castShadow: false
-      }).then((loadedModel) => {
-        loadedModel.position.y = -15;
-        scene.add(loadedModel);
+      }).then(loadedModel => {
+        loadedModel.position.y = -15
+        scene.add(loadedModel)
 
         animate()
         setLoading(false)
@@ -122,7 +125,9 @@ const VoxelComputer = () => {
   }, [handleWindowResize])
 
   return (
-    <ComputerContainer ref={refContainer}>{loading && <ComputerSpinner />}</ComputerContainer>
+    <ComputerContainer ref={refContainer}>
+      {loading && <ComputerSpinner />}
+    </ComputerContainer>
   )
 }
 
