@@ -4,6 +4,7 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbShareCamp from '../public/images/works/sharecamp_thumb.png'
+import thumbIndiaVACC from '../public/images/works/indiavacc_thumb.png'
 import thumbDocScores from '../public/images/works/docscores_01.png'
 import thumbGitHubRepo from '../public/images/works/githubrepo_02.png'
 
@@ -16,7 +17,11 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="sharecamp" title="ShareCamp" thumbnail={thumbShareCamp}>
+          <WorkGridItem
+            id="sharecamp"
+            title="ShareCamp"
+            thumbnail={thumbShareCamp}
+          >
             A Social Media Platform for Traveling Freakz to share Campgrounds.
           </WorkGridItem>
         </Section>
@@ -39,12 +44,15 @@ const Works = () => (
             Score Ball by Ball for Cricket Matches.
           </WorkGridItem>
         </Section>
-        {/* <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="indiaVACC"
+            thumbnail={thumbIndiaVACC}
+            title="India vACC"
+          >
+            Landing Page for India vACC.
           </WorkGridItem>
-        </Section> */}
+        </Section>
       </SimpleGrid>
 
       {/* <Section delay={0.2}>

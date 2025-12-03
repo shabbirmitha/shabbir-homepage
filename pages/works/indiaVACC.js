@@ -12,17 +12,17 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="DocScores">
+  <Layout title="IndiaVACC">
     <Container>
       <Title>
-        DocScores <Badge>2025</Badge>
+        India vACC <Badge>2025</Badge>
       </Title>
-      <P>Score Ball by Ball for Cricket Matches.</P>
+      <P>Landing Page for India vACC.</P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://doc-scores.vercel.app/">
-            https://doc-scores.vercel.app/ <ExternalLinkIcon mx="2px" />
+          <Link href="https://indiavacc.org/">
+            https://indiavacc.org/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -31,7 +31,7 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>ReactJS</span>
+          <span>NextJs, Strapi</span>
         </ListItem>
         {/* <ListItem>
           <Meta>Blogpost</Meta>
@@ -42,12 +42,16 @@ const Work = () => (
         </ListItem> */}
       </List>
 
-      <AspectRatio maxW="640px" ratio={2} my={4}>
-        <WorkImage src="/images/works/docscores_01.png" alt="docScores" />
+      <AspectRatio maxW="640px" ratio={1.7} my={4}>
+        <WorkImage src="/images/works/indiavacc_01.png" alt="indiavacc" />
       </AspectRatio>
 
-      <AspectRatio maxW="640px" ratio={2} my={4}>
-        <WorkImage src="/images/works/docscores_02.png" alt="docScores" />
+      <AspectRatio maxW="640px" ratio={1.7} my={4}>
+        <WorkImage src="/images/works/indiavacc_02.png" alt="indiavacc" />
+      </AspectRatio>
+
+      <AspectRatio maxW="640px" ratio={1.7} my={4}>
+        <WorkImage src="/images/works/indiavacc_03.png" alt="indiavacc" />
       </AspectRatio>
     </Container>
   </Layout>

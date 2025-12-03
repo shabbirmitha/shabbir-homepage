@@ -8,7 +8,7 @@ import {
   Button,
   List,
   ListItem,
-  useColorModeValue,
+  useColorModeValue
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -23,10 +23,6 @@ import thumbDocScores from '../public/images/works/docscores_01.png'
 import myPic from '../public/images/shabbir.JPG'
 import Image from 'next/image'
 import Terminal from '../components/Terminal'
-
-
-
-
 
 const Home = () => (
   <Layout>
@@ -81,9 +77,17 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          a developer focused on building with MERN stack, now
-          exploring DevOps to streamline how things run and ship,
-          with a passion for creating digital stuff.
+          Versatile Full-Stack & DevOps-oriented Software Developer with
+          hands-on experience in building and maintaining scalable web
+          applications using React and TypeScript. Proficient in backend API
+          design, database modeling, and full-stack architecture, with strong
+          working knowledge of Node.js, Express, and MongoDB. Skilled in
+          front-end development as well as orchestrating CI/CD pipelines and
+          applying clean code practices — including micro-frontend and monorepo
+          architectures using npm/PNPM. Now expanding into mobile development
+          with Flutter and Dart. Motivated and experienced in delivering
+          end-to-end solutions within agile teams, from requirements gathering
+          to deployment.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -102,9 +106,7 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           Terminal
         </Heading>
-        <div
-          style={{ border: "1px solid white", height: "400px" }}
-        >
+        <div style={{ border: '1px solid white', height: '400px' }}>
           <Terminal />
         </div>
       </Section>
@@ -114,17 +116,17 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>2003</BioYear>
-          Born in Rajasthan, India.
-        </BioSection>
-        <BioSection>
           <BioYear>2024</BioYear>
-          Completed the Bachelor&apos;s Program in Computer Application
-          from Institution of Management and Entreprenourship Development.
+          Completed the Bachelor&apos;s Program in Computer Application from
+          Institution of Management and Entreprenourship Development.
         </BioSection>
         <BioSection>
-          <BioYear>2024-Present</BioYear>
-        Working as SDE-1 at <Link href="https://getmaxiq.com/" target="_blank">MaxIQ</Link>.
+          <BioYear>2025</BioYear>
+          Worked as SDE-1 at{' '}
+          <Link href="https://getmaxiq.com/" target="_blank">
+            MaxIQ
+          </Link>
+          .
         </BioSection>
       </Section>
 
@@ -201,9 +203,6 @@ const Home = () => (
             Score Ball by Ball for Cricket Matches.
           </GridItem>
         </SimpleGrid>
-
-
-
       </Section>
     </Container>
   </Layout>
