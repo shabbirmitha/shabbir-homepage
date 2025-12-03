@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { ReactTerminal, TerminalContextProvider } from 'react-terminal'
 import { signIn, signOut, useSession } from 'next-auth/react'
