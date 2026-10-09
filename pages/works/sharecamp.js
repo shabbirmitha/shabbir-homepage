@@ -17,9 +17,7 @@ const Work = () => (
       <Title>
         ShareCamp <Badge>2019-2021</Badge>
       </Title>
-      <P>
-        A Social Media Platform for Traveling Freakz to share Campgrounds.
-      </P>
+      <P>A Social Media Platform for Traveling Freakz to share Campgrounds.</P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
@@ -44,7 +42,6 @@ const Work = () => (
         </ListItem> */}
       </List>
 
-
       <AspectRatio maxW="640px" ratio={1.7} my={4}>
         <WorkImage src="/images/works/sharecamp_01.png" alt="ShareCamp" />
       </AspectRatio>
@@ -56,11 +53,9 @@ const Work = () => (
       <AspectRatio maxW="640px" ratio={1} my={4}>
         <WorkImage src="/images/works/sharecamp_03.png" alt="ShareCamp" />
       </AspectRatio>
-
-
     </Container>
   </Layout>
 )
 
 export default Work
-export { getServerSideProps } from '../../components/chakra'
+export { getStaticProps } from '../../components/chakra'
