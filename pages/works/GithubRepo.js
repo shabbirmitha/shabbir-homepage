@@ -18,8 +18,9 @@ const Work = () => (
         GithubRepo <Badge>2022</Badge>
       </Title>
       <P>
-        GithubRepo lets you search and view Repositories of github users. It
-        also shows user info. It includes an animated loader with pagination.
+        GithubRepo lets you search and view Repositories of
+        github users. It also shows user info. It includes
+        an animated loader with pagination.
       </P>
       <List ml={4} my={4}>
         <ListItem>
@@ -28,15 +29,13 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Link</Meta>
-          <Link href="https://angular-app-swart-pi.vercel.app/" target="_blank">
-            Website <ExternalLinkIcon mx="2px" />
-          </Link>
-          <br />
-          <Link
-            href="https://github.com/shabbirmitha/angular-app"
-            target="_blank"
-          >
-            Github Repository <ExternalLinkIcon mx="2px" />
+          <Link href="https://angular-app-swart-pi.vercel.app/" target='_blank'>
+            Website{' '}
+            <ExternalLinkIcon mx="2px" />
+          </Link><br />
+          <Link href="https://github.com/shabbirmitha/angular-app" target='_blank'>
+            Github Repository{' '}
+            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -90,9 +89,10 @@ const Work = () => (
       <AspectRatio maxW="640px" ratio={1.7} my={4}>
         <WorkImage src="/images/works/githubrepo_02.png" alt="githubrepo" />
       </AspectRatio>
+
     </Container>
   </Layout>
 )
 
 export default Work
-export { getStaticProps } from '../../components/chakra'
+export { getServerSideProps } from '../../components/chakra'
