@@ -1,12 +1,4 @@
-const nextConfig = {
-  output: 'export',
-
-  images: {
-    unoptimized: true
-  },
-
+module.exports = {
   reactStrictMode: true,
   swcMinify: true
 }
-
-module.exports = nextConfig
